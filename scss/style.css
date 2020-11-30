@@ -1,6 +1,320 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
 .container {
   margin: 0 auto;
   max-width: 1920px;
   width: 100%;
+}
+
+figure {
+  margin: 0;
+  overflow: hidden;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 50px;
+  max-width: 860px;
+  font-family: DIN Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 40px;
+  text-transform: uppercase;
+}
+
+.newsBanner {
+  width: 100%;
+}
+
+.newsBanner figure.image-cover {
+  max-height: 470px;
+}
+
+.mainNewsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.newsContainer__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: calc(100% / 3 *2);
+  border-right: 1px solid #cfcfcf;
+}
+
+.newsContainer__right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 200px;
+  width: calc(100% / 3);
+}
+
+.newsContainer__right .regions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 60px 30px;
+  font-family: DIN Pro;
+  font-style: italic;
+  font-weight: bold;
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+.newsContainer__right .regions span {
+  margin-bottom: 12px;
+}
+
+.newsContainer__right .regions span:first-child {
+  color: #FF942D;
+}
+
+.newsContainer__right .regions span:nth-child(2) {
+  color: #0070BA;
+}
+
+.newsContainer__right .regions span:last-child {
+  margin-bottom: 0;
+  color: #4DD6CB;
+}
+
+.news__date {
+  font-family: Din Pro;
+  font-weight: 500;
+  font-size: 32px;
+  text-transform: uppercase;
+  color: #aaa;
+}
+
+.news {
+  padding: 80px 80px 70px 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border-bottom: 1px solid #cfcfcf;
+}
+
+.news p {
+  font-family: DIN Pro;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+.news p.announcement {
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+
+.podcast {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0 148px 0 170px;
+}
+
+.podcast .podcast-text {
+  position: relative;
+  font-family: DIN Pro;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 30px;
+  color: #0F0F0F;
+}
+
+.podcast .podcast-text .podcast-arrow-left, .podcast .podcast-text .podcast-arrow-right {
+  position: absolute;
+  max-width: 55px;
+  max-height: 62px;
+}
+
+.podcast .podcast-text .podcast-arrow-left {
+  top: -23px;
+  left: -75px;
+}
+
+.podcast .podcast-text .podcast-arrow-right {
+  right: -75px;
+  bottom: -23px;
+}
+
+.podcast .audio-track-avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.podcast .audio-track-avatar figure {
+  max-width: 100px;
+  max-height: 100px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-right: 30px;
+}
+
+.podcast .audio-track-avatar .author-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.podcast .audio-track-avatar .author-info h3 {
+  margin: 0;
+  font-family: DIN Pro;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 22px;
+  text-transform: uppercase;
+}
+
+.podcast .audio-track-avatar .author-info p {
+  margin: 0;
+  font-family: DIN Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  color: #AAAAAA;
+}
+
+.reference {
+  position: relative;
+  padding: 64px 148px 104px 230px;
+  border-bottom: 1px solid #cfcfcf;
+  background-image: url("../images/green-lines.svg");
+  background-repeat: no-repeat;
+  background-position: left center;
+}
+
+.reference h2 {
+  margin: 0;
+  font-family: DIN Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.reference p {
+  margin-top: 30px;
+  font-family: DIN Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 29px;
+}
+
+.slider-with-arrows {
+  padding: 42px 30px 42px 60px;
+}
+
+.slider-with-arrows figcaption {
+  font-family: DIN Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 30px;
+  color: #AAAAAA;
+}
+
+.slider-with-arrows figure {
+  margin-bottom: 10px;
+}
+
+.slider-with-arrows .bottonsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.slider-with-arrows .bottonsContainer .bottons-left, .slider-with-arrows .bottonsContainer .bottons-right {
+  margin: 0;
+  width: 28px;
+  height: 28px;
+  border: none;
+  outline: none;
+  border-radius: 50%;
+  background-color: #FF942D;
+}
+
+.slider-with-arrows .bottonsContainer .bottons-left:hover, .slider-with-arrows .bottonsContainer .bottons-right:hover {
+  cursor: pointer;
+}
+
+.slider-with-arrows .bottonsContainer .bottons-left:disabled, .slider-with-arrows .bottonsContainer .bottons-right:disabled {
+  background-color: rgba(255, 148, 45, 0.5);
+}
+
+.slider-with-arrows .bottonsContainer .bottons-left {
+  margin-right: 10px;
+  background-image: url("../images/arrow-left.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+.slider-with-arrows .bottonsContainer .bottons-right {
+  background-image: url("../images/arrow-right.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
 }
 /*# sourceMappingURL=style.css.map */
